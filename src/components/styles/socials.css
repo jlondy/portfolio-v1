@@ -1,0 +1,58 @@
+.socials {
+	height: 100%;
+	width: 15%;
+	position: fixed;
+	top: 15%;
+	right: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	text-align: center;
+	display: block;
+}
+.socials li:nth-child(1)::before {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 100px;
+	margin: 25px auto;
+	background-color: var(--cyan);
+	pointer-events: none;
+}
+.socials li:nth-child(6)::after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 100px;
+	margin: 25px auto;
+	background-color: var(--cyan);
+	pointer-events: none;
+}
+
+.socials li {
+	z-index: 100;
+	display: block;
+	padding-bottom: 15px;
+	position: relative;
+	top: 0;
+	transition: top ease-in-out 0s;
+}
+
+.socials a {
+	color: var(--grey);
+	font-size: 25px;
+}
+.socials a:hover {
+	color: var(--cyan);
+	top: -2px;
+}
+
+@media screen and (max-width: 770px) {
+	.socials {
+		display: none;
+		z-index: -5;
+	}
+	.socials a {
+		display: none;
+		z-index: -5;
+	}
+}

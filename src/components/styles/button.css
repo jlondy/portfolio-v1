@@ -1,0 +1,12 @@
+button {
+	background-color: var(--black);
+	padding: 1em 2em 1em 2em;
+	border: 1px solid var(--cyan);
+	border-radius: 16px;
+	color: var(--cyan);
+	outline: none;
+}
+button:hover {
+	background-color: var(--button-rgba);
+	cursor: pointer;
+}

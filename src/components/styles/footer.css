@@ -1,0 +1,35 @@
+.footer {
+	width: 100%;
+	background-color: var(--dark-black);
+}
+.footer-message {
+	color: var(--grey);
+	margin: 0;
+	text-align: center;
+	padding-bottom: 5px;
+	padding-top: 10px;
+	font-size: clamp(15px, 0.5vw, 30px);
+	line-height: 1.6;
+}
+.footer-list {
+	display: none;
+	padding-top: 15px;
+}
+.heart {
+	color: var(--cyan);
+}
+
+@media screen and (max-width: 770px) {
+	.footer-list {
+		margin: 0px 60px 0px 60px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.footer-list a {
+		color: var(--grey);
+	}
+	.footer-list a:hover {
+		color: var(--cyan);
+	}
+}

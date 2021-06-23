@@ -1,0 +1,29 @@
+.styled-text {
+	color: var(--cyan);
+	cursor: pointer;
+	position: relative;
+}
+
+.styled-text::after {
+	content: "";
+	position: absolute;
+	border-radius: 16px;
+	top: 60%;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: var(--cyan);
+	opacity: 1;
+	transition: opacity 500ms, transform 500ms;
+}
+.styled-text::after {
+	opacity: 1;
+	transform: scale(0);
+	transform-origin: center;
+}
+
+.styled-text:hover::after,
+.styled-text:focus::after {
+	transform: scale(1);
+	pointer-events: auto;
+}

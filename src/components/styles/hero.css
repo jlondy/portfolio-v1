@@ -1,0 +1,54 @@
+.container {
+	height: 60vh;
+}
+.hero {
+	display: flex;
+	-webkit-box-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	flex-direction: column;
+	align-items: flex-start;
+	min-height: 100vh;
+	padding-top: 100px;
+}
+
+.hello-message {
+	color: var(--cyan);
+	font-size: clamp(20px, 2vw, 40px);
+	font-weight: 400;
+	margin: 0;
+}
+.name {
+	font-size: clamp(40px, 8vw, 80px);
+	font-weight: 600;
+	color: var(--white);
+	margin: 0;
+}
+.what-i-do {
+	font-size: clamp(40px, 5vw, 80px);
+	font-weight: 600;
+	color: var(--grey);
+	margin: 0;
+}
+.bio {
+	color: var(--grey);
+	margin: 20px 0px 0px;
+	max-width: 500px;
+	padding-bottom: 30px;
+	font-size: clamp(20px, 1vw, 40px);
+	line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+	.hero {
+		padding-top: 0px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.hero {
+		padding: 0px 5px 0px 5px;
+		align-items: center;
+		text-align: center;
+	}
+}

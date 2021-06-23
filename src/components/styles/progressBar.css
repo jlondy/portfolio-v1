@@ -1,0 +1,30 @@
+.progress {
+	height: 100%;
+	width: 200px;
+	position: fixed;
+	z-index: -1;
+	top: 10%;
+	left: 0;
+	overflow-x: hidden;
+	display: block;
+}
+
+.progress-container {
+	height: 100%;
+	width: 1px;
+	display: block;
+	justify-content: center;
+	margin-left: 50%;
+}
+
+.progress-bar {
+	width: 1px;
+	height: 0%;
+}
+
+@media screen and (max-width: 770px) {
+	.progress {
+		display: none;
+		z-index: -5;
+	}
+}
